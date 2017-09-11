@@ -1,8 +1,3 @@
-
-dependencies {
-    compile 'net.openhft:zero-allocation-hashing:0.8'
-}
-
 //dokka {
 //    moduleName = 'tech.pronghorn.coroutines'
 //    outputFormat = 'javadoc'
