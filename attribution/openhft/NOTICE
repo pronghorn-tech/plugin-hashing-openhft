@@ -1,0 +1,3 @@
+This plugin depends on the OpenHFT Zero Allocation Hashing library : https://github.com/OpenHFT/Zero-Allocation-Hashing
+
+It is licensed under the Apache License, Version 2.0, viewable in full in the adjacent LICENSE file.
