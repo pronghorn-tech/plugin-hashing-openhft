@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        kotlinVersion = '1.1.51'
+        kotlinVersion = '1.2.31'
     }
 
     repositories {
@@ -14,7 +14,7 @@ buildscript {
 }
 
 group 'tech.pronghorn'
-version '0.1.3-SNAPSHOT'
+version '0.2.0-SNAPSHOT'
 
 apply plugin: 'kotlin'
 apply plugin: 'org.junit.platform.gradle.plugin'
@@ -27,9 +27,9 @@ uploadArchives {
                 artifactId = 'plugin-hashing-openhft'
             }
             pom.project {
-                name 'Pronghorn HTTP Server OpenHFT Hashing Plugin'
+                name 'Pronghorn Framework OpenHFT Hashing Plugin'
                 packaging 'jar'
-                description 'A plugin for the Pronghorn HTTP Server utilizing OpenHFT Zero Allocation Hashing for hashing.'
+                description 'A plugin for the Pronghorn Framework utilizing OpenHFT Zero Allocation Hashing for hashing.'
                 url 'https://pronghorn.tech'
                 scm {
                     url 'https://github.com/pronghorn-tech/plugin-hashing-openhft.git'
@@ -51,6 +51,6 @@ dependencies {
     compile "tech.pronghorn:common:$version"
     compile 'net.openhft:zero-allocation-hashing:0.8'
 
-    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.0.0'
-    testCompile 'org.mockito:mockito-core:2.10.0'
+    testCompile 'org.junit.jupiter:junit-jupiter-engine:5.1.0'
+    testCompile 'org.mockito:mockito-core:2.16.0'
 }
